@@ -109,7 +109,7 @@ nexmo.number.buy('ES', 34911067000, function(err, res) { ... });
 
 ### Number - cancel ###
 ```js
-// Purchase a given inbound number
+// Cancel an inbound number
 // Required parameters:
 //    country-code : Country code (ex: ES).
 //    msisdn : An available inbound number (ex: 34911067000)
