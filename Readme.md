@@ -94,19 +94,6 @@ nexmo.number.search('ES', function(err, res) { ... });
 nexmo.number.buy('ES', 34911067000, function(err, res) { ... });
 ```
 
-### Number - buy ###
-```js
-// Purchase a given inbound number
-// Required parameters:
-//    country-code : Country code (ex: ES).
-//    msisdn : An available inbound number (ex: 34911067000)
-// Response:
-//    Http Status 200 if successful cancellation
-//    Http Status 401 if wrong credentials
-//    Http Status 420 if wrong parameters
-nexmo.number.buy('ES', 34911067000, function(err, res) { ... });
-```
-
 ### Number - cancel ###
 ```js
 // Cancel an inbound number
