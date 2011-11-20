@@ -1,0 +1,21 @@
+{ "name": "node-nexmo"
+, "description": "Nexmo Node Library"
+, "author" : "shripadk"
+, "maintainers":
+  [ { "name": "Shripad K"
+    , "email": "assortmentofsorts@gmail.com"
+    }
+  ]
+, "version": "0.0.1"
+, "repository" :
+  { "type" : "git"
+  , "url" : "http://github.com/shripadk/node-nexmo.git"
+  }
+, "keywords" : ["nexmo", "sms", "international"]
+, "bugs" : { "email" : "assortmentofsorts@gmail.com" }
+, "directories" : { "lib": "./lib" }
+, "dependencies": {
+    "nodeunit-fork": "0.6.5",
+    "request": "2.2.5"
+  }
+}
