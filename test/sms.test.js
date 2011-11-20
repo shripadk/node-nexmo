@@ -160,7 +160,7 @@ module.exports['test nexmo.sms.send'] = testCase({
       from: SMSFixture.from,
       to: SMSFixture.to,
       type: 'text',
-      text: 'Hello World!'  
+      text: 'Hello World!'
     }, function() {
       console.log(arguments);
       test.done();
