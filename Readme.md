@@ -29,7 +29,102 @@ To run the tests:
 
     make test
 
-I'll be adding more examples soon.
+API
+---
+
+Account
+---
+
+### Get Balance ###
+```js
+// Retrieve your current account balance
+nexmo.account.getBalance(function(err, res) { ... });
+```
+
+### Get Pricing (use Country Codes) ###
+```js
+// Retrieve Nexmo's outbound pricing for a given country
+nexmo.account.getPricing('IN', function(err, res) { ... });
+```
+
+### Update Settings ###
+```js
+// Update your account settings
+nexmo.account.updateSettings({
+  newSecret: 'max8char', // Optional. Your new API secret (8 characters max)
+  moCallBackUrl: 'http://mycallback.servername', // Optional. Inbound call back URL
+  drCallBackUrl: 'http://mycallback.servername' // Optional. DLR call back URL
+}, function(err, res) { ... });
+
+// want it to be much simpler?
+
+nexmo.account.updateSecret('max8char', function(err, res) { ... });
+nexmo.account.updateMOCallbackURL('http://mycallback.servername', function(err, res) { ... });
+nexmo.account.updateDRCallbackURL('http://mycallback.servername', function(err, res) { ... });
+```
+
+### Get Numbers ###
+```js
+// Get all inbound numbers associated with your Nexmo Account
+nexmo.account.getNumbers(function(err, res) { ... });
+```
+
+Number
+---
+
+### Number - search ###
+```js
+// Get available inbound numbers for a given country
+// Required parameters: country-code (ex: ES).
+// Optional parameter:  pattern (ex: 7000)
+nexmo.number.search('ES', 7000, function(err, res) { ... });
+nexmo.number.search('ES', function(err, res) { ... });
+```
+
+### Number - buy ###
+```js
+// Purchase a given inbound number
+// Required parameters:
+//    country-code : Country code (ex: ES).
+//    msisdn : An available inbound number (ex: 34911067000)
+// Response:
+//    Http Status 200 if successful purchase
+//    Http Status 401 if wrong credentials
+//    Http Status 420 if wrong parameters
+nexmo.number.buy('ES', 34911067000, function(err, res) { ... });
+```
+
+### Number - buy ###
+```js
+// Purchase a given inbound number
+// Required parameters:
+//    country-code : Country code (ex: ES).
+//    msisdn : An available inbound number (ex: 34911067000)
+// Response:
+//    Http Status 200 if successful cancellation
+//    Http Status 401 if wrong credentials
+//    Http Status 420 if wrong parameters
+nexmo.number.buy('ES', 34911067000, function(err, res) { ... });
+```
+
+### Number - cancel ###
+```js
+// Purchase a given inbound number
+// Required parameters:
+//    country-code : Country code (ex: ES).
+//    msisdn : An available inbound number (ex: 34911067000)
+// Response:
+//    Http Status 200 if successful purchase
+//    Http Status 401 if wrong credentials
+//    Http Status 420 if wrong parameters
+nexmo.number.buy('ES', 34911067000, function(err, res) { ... });
+```
+
+I'll be adding more examples soon, including a fun example application (probably an article?).
+Please fork and contribute and send me pull requests.
+This was done in 2 hours time, so there might be some bugs somewhere.
+All tests pass for now. If you found a bug, but lazy to implement the solution don't hesitate to
+leave behind at least a failing test so I can fix it immediately. :)
 
 ## License 
 
