@@ -117,7 +117,7 @@ nexmo.number.buy('ES', 34911067000, function(err, res) { ... });
 //    Http Status 200 if successful purchase
 //    Http Status 401 if wrong credentials
 //    Http Status 420 if wrong parameters
-nexmo.number.buy('ES', 34911067000, function(err, res) { ... });
+nexmo.number.cancel('ES', 34911067000, function(err, res) { ... });
 ```
 
 I'll be adding more examples soon, including a fun example application (probably an article?).
