@@ -1,4 +1,4 @@
 exports.Fixture = {
-  key: '7e75305b',
-  secret: '3de5a7c7'
+  key: 'your-key-here',
+  secret: 'your-secret-here'
 };
