@@ -1,4 +1,4 @@
 exports.Fixture = {
-  from: 'your-purchased-number-here',
-  to: 'destination-number-here'
+  from: '447559600514',
+  to: '919742741072'
 }
