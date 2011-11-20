@@ -39,14 +39,14 @@ module.exports['test nexmo.sms.send'] = testCase({
   'test nexmo.sms.send throws nothing passed': function(test) {
     var self = this;
     test.throws(function() {
-      self.nexmo.send();
+      self.nexmo.sms.send();
     });
     test.done();
   },
   'test nexmo.sms.send throws when no callback': function(test) {
     var self = this;
     test.throws(function() {
-      self.nexmo.send({});
+      self.nexmo.sms.send({});
     });
     test.done();
   },
