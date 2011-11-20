@@ -23,11 +23,11 @@ nexmo.sms.send({
 ```
 Look at the `test/` directory for more examples.
 
-Before running tests change the values in the `test/fixtures' folder.
+Before running tests change the values in the `test/fixtures` folder.
 
 To run the tests:
 
-    `make test`
+    make test
 
 I'll be adding more examples soon.
 
