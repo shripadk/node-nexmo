@@ -18,7 +18,17 @@ nexmo.sms.send({
   type: 'text',
   text: 'Hello World!'
 }, function(err, response) {
-  console.log(response['message-count']);
+  /**
+   Sample Response:
+   { 'message-count': '1',
+      messages: 
+       [ { 'message-price': '0.00450000',
+           status: '0',
+           'message-id': '05861BCE',
+           'remaining-balance': '1.32350000',
+           statusText: 'Success',
+           meaning: 'The message was successfully accepted for delivery by nexmo' } ] }
+   */
 });
 ```
 Look at the `test/` directory for more examples.
