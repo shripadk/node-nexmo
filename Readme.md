@@ -126,31 +126,6 @@ Module specific settings
 nexmo.setBaseURL('https://new-endpoint.nexmo.com');
 ```
 
-### Number - buy ###
-```js
-// Purchase a given inbound number
-// Required parameters:
-//    country-code : Country code (ex: ES).
-//    msisdn : An available inbound number (ex: 34911067000)
-// Response:
-//    Http Status 200 if successful purchase
-//    Http Status 401 if wrong credentials
-//    Http Status 420 if wrong parameters
-nexmo.number.buy('ES', 34911067000, function(err, res) { ... });
-```
-
-### Number - cancel ###
-```js
-// Cancel an inbound number
-// Required parameters:
-//    country-code : Country code (ex: ES).
-//    msisdn : An available inbound number (ex: 34911067000)
-// Response:
-//    Http Status 200 if successful cancellation
-//    Http Status 401 if wrong credentials
-//    Http Status 420 if wrong parameters
-nexmo.number.cancel('ES', 34911067000, function(err, res) { ... });
-```
 I'll be adding more examples soon, including a fun example application (probably an article?).
 Please fork and contribute and send me pull requests.
 This was done in 2 hours time, so there might be some bugs somewhere.
