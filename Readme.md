@@ -111,7 +111,7 @@ nexmo.number.buy('ES', 34911067000, function(err, res) { ... });
 //    country-code : Country code (ex: ES).
 //    msisdn : An available inbound number (ex: 34911067000)
 // Response:
-//    Http Status 200 if successful purchase
+//    Http Status 200 if successful cancellation
 //    Http Status 401 if wrong credentials
 //    Http Status 420 if wrong parameters
 nexmo.number.cancel('ES', 34911067000, function(err, res) { ... });
